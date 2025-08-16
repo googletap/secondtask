@@ -1,0 +1,111 @@
+/* === Global Styles === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+}
+h1, h2 {
+  text-align: center;
+}
+
+/* === Navbar (Flexbox) === */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px 20px;
+}
+nav h1 {
+  color: #fff;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* === Layout (Grid) === */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* === Contact Form === */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #555;
+}
+
+/* === To-do List === */
+.todo {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.todo ul {
+  padding: 0;
+  list-style: none;
+}
+.todo li {
+  background: #eee;
+  padding: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.todo button:hover {
+  background: darkred;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
